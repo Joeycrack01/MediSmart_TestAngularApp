@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\dialog-box",
+    "\\src\\app\\Services",
+    "\\src\\app\\Services\\typescript-angular-client-generated",
+    "\\src\\app\\Services\\typescript-angular-client-generated\\api",
+    "\\src\\app\\Services\\typescript-angular-client-generated\\model",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\app.component.ts",
+  "PreviewInSolutionExplorer": false
+}

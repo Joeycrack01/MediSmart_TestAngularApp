@@ -1,0 +1,50 @@
+<!-- dialog-box.component.html -->
+<h1 mat-dialog-title><strong>{{action}}</strong></h1>
+<div mat-dialog-content *ngIf="action != 'Delete'; else elseTemplate">
+
+  <mat-form-field>
+    <input placeholder="{{action}} First Name" matInput [(ngModel)]="local_data.firstName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field >
+    <input placeholder="{{action}} Last Name" matInput [(ngModel)]="local_data.lastName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} Company Name" matInput [(ngModel)]="local_data.companyName">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} StaffId" matInput [(ngModel)]="local_data.staffId">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} Department" matInput [(ngModel)]="local_data.department">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} State Of Origin" matInput [(ngModel)]="local_data.stateOfOrigin">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} Bvn" matInput [(ngModel)]="local_data.bvn">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} Company Address" matInput [(ngModel)]="local_data.companyAddress">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+    <input placeholder="{{action}} Account Number" matInput [(ngModel)]="local_data.accountNumber">
+  </mat-form-field>
+  <br/>
+
+  
+</div>
+<ng-template #elseTemplate>
+  Sure to delete {{local_data.firstName}} {{local_data.lastName}} details?
+</ng-template>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>
